@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({
 app.use(express.static("public"));
 
 mongoose.set('strictQuery', false);
-// mongoose.connect("mongodb+srv://smarch323:FallSean123@cluster0.0nanunf.mongodb.net/todolistDB");
+// mongoose.connect(process.env.MONGO_URI);
 
 // database connection for cyclic
 
@@ -46,11 +46,11 @@ const item1 = new Item({
 });
 
 const item2 = new Item({
-  name: "For Realz, Learn to Code"
+  name: "Play Basketball"
 });
 
 const item3 = new Item({
-  name: "I'm being serious"
+  name: "Attend All the Concerts"
 });
 
 const defaultItems = [item1, item2, item3];

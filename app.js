@@ -83,7 +83,8 @@ passport.deserializeUser(function(user, cb) {
 passport.use(new GoogleStrategy({
   clientID: process.env.CLIENT_ID,
   clientSecret: process.env.CLIENT_SECRET,
-  callbackURL: "http://localhost:3000/auth/google/listlog",
+  // callbackURL: "http://localhost:3000/auth/google/listlog",
+  callbackURL: "https://cute-rose-gharial-slip.cyclic.app/"
 },
 function(accessToken, refreshToken, profile, cb) {
   console.log(profile);

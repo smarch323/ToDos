@@ -97,6 +97,7 @@ function(accessToken, refreshToken, profile, cb) {
       const newUser = new User({
         googleId: profile.id,
         googleName: profile.displayName,
+        username: profile.displayName
       });
       return newUser.save();
     }

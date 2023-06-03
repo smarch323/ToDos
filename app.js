@@ -139,15 +139,15 @@ const itemSchema = new mongoose.Schema({
 const Item = mongoose.model("Item", itemSchema);
 
 const item1 = new Item({
-  name: "Learn to Code"
+  name: "You've Logged In!"
 });
 
 const item2 = new Item({
-  name: "Play Basketball"
+  name: "Log Your Important Tasks"
 });
 
 const item3 = new Item({
-  name: "Attend All the Concerts"
+  name: "Delete Your Tasks Once Completed"
 });
 
 const defaultItems = [item1, item2, item3];

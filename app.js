@@ -86,7 +86,6 @@ passport.use(new GoogleStrategy({
   // callbackURL: "http://localhost:3000/auth/google/listlog",
   // callbackURL: "https://cute-rose-gharial-slip.cyclic.app/auth/google/listlog"
   callbackURL: "https://todos-voyo.onrender.com/auth/google/listlog"
-
 },
 function(accessToken, refreshToken, profile, cb) {
   console.log(profile);
